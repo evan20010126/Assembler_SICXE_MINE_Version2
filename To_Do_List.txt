@@ -1,0 +1,27 @@
+SIC.py
+OP table 寫好
+寫format2有哪些指令 寫在list
+多寫一個函式判斷是不是format2 學老師+
+
+assembler.py
+函式: format desision 決定是format幾的 傳op近來 如果傳進來是加號 就回傳4 else if not format2 就回傳2 因為不是2就是3
+
+pass1 locctr 建symbol table時要知道是format幾才知道要加幾個byte 本來寫死的是+3
+-------------------------
+
+暫存器比較多
+
+老師有一個 isinstruction 判斷在不在optable 但在SIC XE OPcode 可能有 '+' if 傳進來是加號就去掉
+
+assembler.py
+有一個老師寫的函示 是 generate instruction 做的是 丟甚麼指令進來要變成 machine code pass2會用到
+參數 opcode oprand pass1得table
+先寫一個format = formatdesision 丟op給他就知道是format幾了 
+4的話 乘以 2**26次方左移過去
+
+
+有一個假指令較base
+base不用加
+
+LDB 是否只配#用
+Base 是多少
